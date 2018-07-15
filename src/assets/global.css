@@ -1,0 +1,23 @@
+/* font css */
+
+body{
+  font-size: 62.5%;
+}
+.money-label{
+  font-size:2rem;
+}
+.text-center{
+  text-align: center;
+}
+
+
+/* color css */
+.red{
+  color:#F56C6C;
+}
+.green{
+  color:#67C23A;
+}
+.normal{
+  color:#909399;
+}

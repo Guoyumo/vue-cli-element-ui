@@ -2,7 +2,7 @@
   <div id="app">
     <el-row>
       <el-col :span="4">
-        <div class="el-menu--horizontal h-60">
+        <div class="el-menu--horizontal h-60 text-center">
           <img src="./assets/logo.png" height="60px"/>
         </div>
       </el-col>
