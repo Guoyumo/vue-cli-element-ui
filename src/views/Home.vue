@@ -1,17 +1,26 @@
 <template>
-  <div>
-    <hello-world></hello-world>
-  </div>
+  <el-row>
+    <el-col :span="20" :offset="2">
+      <el-card class="box-card" >
+        <h3 class="line">资产概况</h3>
+        <div v-for="o in 4" :key="o" class="text item">
+          {{'列表内容 ' + o }}
+        </div>
+      </el-card>
+    </el-col>
+  </el-row>
+  
+
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    
   },
   data() {
     return {
@@ -25,3 +34,12 @@ export default {
   }
 }
 </script>
+<style scoped>
+.box-card{
+  margin:3rem auto;
+}
+.line{
+  border-bottom: 1px solid #eee;
+}
+</style>
+
