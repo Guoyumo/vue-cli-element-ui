@@ -10,6 +10,14 @@ body{
   text-align: center;
 }
 
+h3{
+  font-size: 1rem;
+}
+
+h5{
+  color: #909399;
+}
+
 
 /* color css */
 .red{
@@ -20,4 +28,16 @@ body{
 }
 .normal{
   color:#909399;
+}
+
+/* margin */
+
+.box-card{
+  margin:3rem auto;
+}
+
+/* border */
+
+.line{
+  border-bottom: 1px solid #eee;
 }
