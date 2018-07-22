@@ -27,6 +27,10 @@ Vue.filter('money', function(val) {
   return (((sign)?'':'-') + val + '.' + cents);
 })
 
+Vue.directive('own',function(el,value){
+  console.log(el, value)
+})
+
 
 Vue.config.productionTip = false
 

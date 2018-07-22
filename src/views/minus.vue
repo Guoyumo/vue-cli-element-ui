@@ -39,13 +39,13 @@
               <el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
             </el-checkbox-group>
           </el-form-item>
-          <el-form-item label="特殊资源">
+          <el-form-item label="特殊资源" v-own="form.desc">
             <el-radio-group v-model="form.resource">
               <el-radio label="线上品牌商赞助"></el-radio>
               <el-radio label="线下场地免费"></el-radio>
             </el-radio-group>
           </el-form-item>
-          <el-form-item label="活动形式">
+          <el-form-item label="活动形式" >
             <el-input type="textarea" v-model="form.desc"></el-input>
           </el-form-item>
           <el-form-item>
@@ -71,7 +71,14 @@ export default {
           type: [],
           resource: '',
           desc: ''
-        }
+        },
+        testshow:true,
+        searchText:'',
+        filterList:[
+          {name:'c1',id:1},
+          {name:'c2',id:2},
+          {name:'a1',id:3}
+        ]
       }
     },
     methods: {

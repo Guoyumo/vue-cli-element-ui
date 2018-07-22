@@ -52,15 +52,9 @@ export default {
 }
 </script>
 <style scoped>
-.box-card{
-  margin:3rem auto;
-}
-.line{
-  border-bottom: 1px solid #eee;
-}
-h5{
-  color: #909399;
-}
+
+
+
 .text-right{
   text-align: right;
 }
