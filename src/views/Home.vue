@@ -20,7 +20,6 @@
       </el-card>
     </el-col>
   </el-row>
-  
 
 </template>
 
@@ -58,5 +57,7 @@ export default {
 .text-right{
   text-align: right;
 }
+
+
 </style>
 

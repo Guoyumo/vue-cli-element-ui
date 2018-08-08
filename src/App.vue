@@ -11,7 +11,9 @@
       </el-col>
     </el-row>
     <el-row>
-      <router-view/>
+      <transition name="fade">
+        <router-view/>
+      </transition>
     </el-row>
   </div>
 </template>
@@ -57,5 +59,18 @@ export default {
 }
 .margin-60{
   margin-top:60px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>
